@@ -29,7 +29,7 @@ if (test_input != "") and (test_input != None):
     #        nested.replace_with(nested.get_text(separator=" ", strip=True))
     
     # 문서 url
-    st.write(f"📍문서 url : [{test_input} 증권신고서 원본](%s)"%report_url)
+    st.write(f"📍문서 url : [{test_input} 투자설명서 원본](%s)"%report_url)
     # 투자지표의 적합성 -> 선정 투자지표
     st.write("😁 투자지표의 적합성",pd.read_html(str([table for table in soup.find_all('table') if ("방법론의 적합성" in table.text) or ("투자지표의 적합성" in table.text) or ("투자지표 선정의 적합성" in table.text)][0]))[0])
     # 투자지표의 부적합성
