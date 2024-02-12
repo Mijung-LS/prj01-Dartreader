@@ -5,7 +5,7 @@ import streamlit as st
 import OpenDartReader
 from bs4 import BeautifulSoup
 ######################################################################################################################
-crtfc_key = "586828669663517ac24724495d202824ce5be28e"
+crtfc_key = st.secrets["crtfc_key"]
 dart = OpenDartReader(crtfc_key)
 bgn_de = "20150101"
 end_de = "20240101"
