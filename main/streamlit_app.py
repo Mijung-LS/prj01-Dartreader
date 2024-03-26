@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 crtfc_key = st.secrets["crtfc_key"]
 dart = OpenDartReader(crtfc_key)
 bgn_de = "20150101"
-end_de = "20240101"
+end_de = "20240326"
 ######################################################################################################################
 test_input = st.text_input("💬 기업이름 입력", value="", placeholder=None, disabled=False, label_visibility="visible")
 ######################################################################################################################
